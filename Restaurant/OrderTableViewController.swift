@@ -103,7 +103,7 @@ class OrderTableViewController: UITableViewController, AddToOrderDelegate {
             return result + menuItem.price
         }
         let formattedOrder = String(format: "$%.2f", orderTotal)
-        let alert = UIAlertController(title: "Confirm Order", message: "You are about to submit your order with a total of\(formattedOrder)",
+        let alert = UIAlertController(title: "Confirm Order", message: "You are about to submit your order with a total of \(formattedOrder)",
             preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Submit", style: .default) { action in
             self.uploadOrder()
